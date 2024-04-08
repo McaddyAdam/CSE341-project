@@ -1,0 +1,29 @@
+{
+  "name": "cse-341-project1",
+  "version": "1.0.0",
+  "description": "My First Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McaddyAdam/CSE-341-project1.git"
+  },
+  "author": "Adam Adebesin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McaddyAdam/CSE-341-project1/issues"
+  },
+  "homepage": "https://github.com/McaddyAdam/CSE-341-project1#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mangodb": "^1.0.0",
+    "mongobd": "^0.0.1-security.0",
+    "mongodb": "^6.5.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
