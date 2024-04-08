@@ -1,0 +1,73 @@
+[
+
+{
+"brand": "Reebok",
+"line": "Club C",
+"model": "85 Vintage",
+"height": "low",
+"colors": "chalk, paper white, glen green",
+"retailPrice": 90,
+"releaseDate": "02/12/2021"
+},
+
+{
+"brand": "Reebok",
+"line": "Club C",
+"model": "Revenge Vintage",
+"height": "low",
+"colors": "chalk, collegiate royal, excellent red",
+"retailPrice": 80,
+"releaseDate": "06/02/2021"
+},
+
+{
+"brand": "Reebok",
+"line": "Shaq",
+"model": "Attaq",
+"height": "high",
+"colors": "cloud white, core black, azure",
+"retailPrice": 170,
+"releaseDate": "09/23/2022"
+},
+
+{
+"brand": "Reebok",
+"line": "Ghostbusters",
+"model": "Ghost Smasher",
+"height": "high",
+"colors": "footwear white, pure grey 8, scarlet",
+"retailPrice": 200,
+"releaseDate": "06/06/2022"
+},
+
+{
+"brand": "Reebok",
+"line": "Answer 4",
+"model": "Power Rangers Lord Zedd",
+"height": "mid",
+"colors": "power red, silver metallic, solar lime",
+"retailPrice": 170,
+"releaseDate": "03/25/2022"
+},
+
+{
+"brand": "Reebok",
+"line": "Court Victory Pump",
+"model": "35th Anniversary Michael Chang",
+"height": "high",
+"colors": "footwear white/glen green/soacye",
+"retailPrice": 170,
+"releaseDate": "03/15/2024"
+},
+
+{
+"brand": "Reebok",
+"line": "Question",
+"model": "Dr. J",
+"height": "mid",
+"colors": "footwear white/footwear white/vector red",
+"retailPrice": 160,
+"releaseDate": "03/15/2024"
+}
+
+]

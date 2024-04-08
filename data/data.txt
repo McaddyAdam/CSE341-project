@@ -1,0 +1,51 @@
+[
+
+{
+"brand": "Nike",
+"line": "Jordan",
+"model": "Legacy 312",
+"height": "low",
+"colors": "black, white, metallic gold"
+},
+
+{
+"brand": "Nike",
+"line": "Blazer",
+"model": "77",
+"height": "mid",
+"colors": "white, medium blue, black, habanero red"
+},
+
+{
+"brand": "Nike",
+"line": "Air",
+"model": "VaporMax Plus",
+"height": "mid",
+"colors": "Wolf Grey, black-white"
+},
+
+{
+"brand": "Nike",
+"line": "Air",
+"model": "Max 98 Highlighter",
+"height": "low",
+"colors": "platinum tint, electric green-bright, crimson-black"
+},
+
+{
+"brand": "Nike",
+"line": "Air Force 1",
+"model": "07, Bronzine Saturn Gold",
+"height": "low",
+"colors": "bronzine, coconut milk, saturn gold, sail"
+},
+
+{
+"brand": "Nike",
+"line": "Dunk",
+"model": "Night Sky",
+"height": "low",
+"colors": "Campfire orange/anthracite/summit white"
+}
+
+]

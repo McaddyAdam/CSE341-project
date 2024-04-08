@@ -1,44 +1,20 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Users Api",
-    "description": "Users Api",
+    "title": "Shoes Api",
+    "description": "Shoes Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "http://localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https",
-    "http"
+    "https"
   ],
   "paths": {
-    "/": {
+    "/nike/": {
       "get": {
         "tags": [
-          "Hello World"
-        ],
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/users/": {
-      "get": {
-        "tags": [
-          "Users"
+          "Look at all the Nike shoes listed. 👞 📋"
         ],
         "description": "",
         "produces": [
@@ -52,7 +28,7 @@
       },
       "post": {
         "tags": [
-          "Users"
+          "Input a pair of Nike shoes. 👟"
         ],
         "description": "",
         "parameters": [
@@ -62,19 +38,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "brand": {
                   "example": "any"
                 },
-                "lastName": {
+                "line": {
                   "example": "any"
                 },
-                "email": {
+                "model": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "height": {
                   "example": "any"
                 },
-                "birthday": {
+                "colors": {
                   "example": "any"
                 }
               }
@@ -85,16 +61,22 @@
           "204": {
             "description": "No Content"
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
         }
       }
     },
-    "/users/{id}": {
+    "/nike/{id}": {
       "get": {
         "tags": [
-          "Users"
+          "Look up a pair of Nike by inventory id. 🥾 🆔"
         ],
         "description": "",
         "produces": [
@@ -111,12 +93,15 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
       "put": {
         "tags": [
-          "Users"
+          "Update a pair of Nike shoes. 🥿"
         ],
         "description": "",
         "parameters": [
@@ -132,16 +117,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "username": {
+                "brand": {
                   "example": "any"
                 },
-                "email": {
+                "line": {
                   "example": "any"
                 },
-                "name": {
+                "model": {
                   "example": "any"
                 },
-                "ipaddress": {
+                "height": {
+                  "example": "any"
+                },
+                "colors": {
                   "example": "any"
                 }
               }
@@ -152,6 +140,15 @@
           "204": {
             "description": "No Content"
           },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -159,7 +156,7 @@
       },
       "delete": {
         "tags": [
-          "Users"
+          "Delete a pair of Nike shoes. 🥺"
         ],
         "description": "",
         "parameters": [
@@ -173,6 +170,196 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/reebok/": {
+      "get": {
+        "tags": [
+          "Look at all the Reebok shoes listed. 👞 📋"
+        ],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Input a pair of Reebok shoes. 👟"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "brand": {
+                  "example": "any"
+                },
+                "line": {
+                  "example": "any"
+                },
+                "model": {
+                  "example": "any"
+                },
+                "height": {
+                  "example": "any"
+                },
+                "colors": {
+                  "example": "any"
+                },
+                "retailPrice": {
+                  "example": "any"
+                },
+                "releaseDate": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/reebok/{id}": {
+      "get": {
+        "tags": [
+          "Look up a pair of Reebok by inventory id. 🥾 🆔"
+        ],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Update a pair of Reebok shoes. 🥿"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "brand": {
+                  "example": "any"
+                },
+                "line": {
+                  "example": "any"
+                },
+                "model": {
+                  "example": "any"
+                },
+                "height": {
+                  "example": "any"
+                },
+                "colors": {
+                  "example": "any"
+                },
+                "retailPrice": {
+                  "example": "any"
+                },
+                "releaseDate": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Delete a pair of Reebok shoes. 🥺"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "500": {
             "description": "Internal Server Error"
