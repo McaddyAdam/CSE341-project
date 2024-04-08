@@ -35,8 +35,6 @@ app
   .use('/', require('./routes/index.js'));
 
 
-
-
   passport.use(
   new GitHubStrategy(
     {

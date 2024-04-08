@@ -6,7 +6,7 @@ const doc = {
     description: 'Shoes Api'
   },
   host: 'http://localhost:3000',
-  schemes: ['https']
+  schemes: ['http','https']
 };
 
 const outputFile = './swagger.json';
