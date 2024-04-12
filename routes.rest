@@ -1,15 +1,15 @@
 
 ### Landing page
-GET http://localhost:2
+GET http://localhost:3000
 
 ### Shoe inventory
-GET http://localhost:2/shoes
+GET http://localhost:3000/nike
 
 ### Inventory by id
-GET http://localhost:2/shoes/65f89b7cba201e283e19b657
+GET http://localhost:3000/nike/66147afbb399eca8cac7a22d
 
 ### Add a shoe
-POST http://localhost:2/shoes HTTP/1.1
+POST http://localhost:3000/nike HTTP/1.1
 content-type: application/json
 
 {
@@ -21,7 +21,7 @@ content-type: application/json
 }
 
 ### PUT- Update shoe
-PUT http://localhost:2/shoes/65f91d8be93277b596986af5
+PUT http://localhost:3000/nike/66147afbb399eca8cac7a22d
 content-type: application/json
 
 {
@@ -33,4 +33,41 @@ content-type: application/json
 }
 
 ### Delete shoe
-DELETE http://localhost:2/shoes/65f91d8be93277b596986af5
+DELETE http://localhost:3000/nike/66147afbb399eca8cac7a22d
+
+
+### Landing page
+GET http://localhost:3000
+
+### Shoe inventory
+GET http://localhost:3000/reebok
+
+### Inventory by id
+GET http://localhost:3000/reebok/66147b04b399eca8cac7a234
+
+### Add a shoe
+POST http://localhost:3000/reebok HTTP/1.1
+content-type: application/json
+
+{
+  "brand": "needed",
+  "line": "needed",
+  "model": "needed",
+  "height": "needed",
+  "colors": "needed"
+}
+
+### PUT- Update shoe
+PUT http://localhost:3000/reebok/66147b04b399eca8cac7a234
+content-type: application/json
+
+{
+  "brand": "probably",
+  "line": "probably",
+  "model": "probably",
+  "height": "probably",
+  "colors": "probably"
+}
+
+### Delete shoe
+DELETE http://localhost:3000/reebok/66147b04b399eca8cac7a234
